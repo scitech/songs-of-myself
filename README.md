@@ -1,2 +1,2 @@
 # Songs of Myself
-This creates an interface to view revised lines of Song of Myself, by Walt Whitman, in parallel.
+A web interface for viewing revised lines of Walt Whitman's Song of Myself in parallel.
