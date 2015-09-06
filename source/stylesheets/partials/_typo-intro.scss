@@ -1,0 +1,31 @@
+p.intro {
+
+  font-size: 1rem;
+  font-family: $base-font-family;
+  @include media($large-screen) {
+    font-size: 1.5rem;
+  }
+}
+
+p.credits {
+  font-size: 0.75rem;
+  color: lighten($base-font-color, 30%);
+  @include media($large-screen) {
+    font-size: 0.8rem;
+  }
+  a {
+    color: lighten($base-font-color, 30%);
+    text-decoration: underline;
+  }
+}
+
+.year-large {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+
+  @include media($large-screen) {
+    font-size: 2.5rem;
+    line-height: 4rem;  
+  }
+}

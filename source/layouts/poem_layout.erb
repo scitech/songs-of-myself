@@ -1,0 +1,6 @@
+<% wrap_layout :layout do %>
+  <%= partial "partials/nav", :locals => { :year => current_page.data.year, :otheryear => current_page.data.otheryear } %>
+  <%= yield %>
+  <%= javascript_include_tag  "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" %>
+  <%= javascript_include_tag  "all" %>
+<% end %>

@@ -1,0 +1,40 @@
+---
+type:      map
+mapping:
+  "title":
+    type:       str
+    required:   no
+  "year":
+    type:       int
+    required:   yes
+  "lines":
+    type:       seq
+    required:   yes
+    sequence:
+      - type:       map
+        mapping:
+          "content":
+            type:        str
+            required:    yes
+          "number":
+            type:        int
+            required:    yes
+          "new_section":
+            type:        int
+          "begin_stanza":
+            type:        bool
+          "end_stanza":
+            type:        bool
+          "unique":
+            type:        bool
+          "page_image":
+            type:        int
+          "links":
+            type:        seq
+            sequence: 
+              - type:         map
+                mapping:  
+                  "year":
+                    type:      int
+                  "ref":
+                    type:      int

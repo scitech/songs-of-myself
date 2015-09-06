@@ -1,0 +1,54 @@
+.show {
+  display: block;
+  visibility: visible;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.float-right {
+  float: right;
+}
+
+.caret-right {
+  display: inline-block;
+  vertical-align: middle;
+  @include triangle(10px, $base-font-color, right);
+  @include media($large-screen) {
+    @include triangle(16px, $base-font-color, right);
+  }
+}
+
+.caret-left {
+  display: inline-block;
+  vertical-align: middle;
+  @include triangle(10px, $base-font-color, left);
+  @include media($large-screen) {
+    @include triangle(16px, $base-font-color, left);
+  }
+}
+
+.caret-down {
+  display: inline-block;
+  vertical-align: middle;
+  @include triangle(10px, $base-font-color, down);
+  @include media($large-screen) {
+    @include triangle(16px, $base-font-color, down);
+  }
+}
+
+.caret-up {
+  display: inline-block;
+  vertical-align: middle;
+  @include triangle(10px, $base-font-color, up);
+  @include media($large-screen) {
+    @include triangle(16px, $base-font-color, up);
+  }
+}

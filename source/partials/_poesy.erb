@@ -1,0 +1,16 @@
+<% if line.new_section %>
+  <h3 class="sec-heading"><%= line.new_section %></h3>
+<% end %>
+<% if line.begin_stanza %>
+  <div class="stanza">
+<% end %>
+<div class="line" 
+      data-line-number=<%= line.number %>
+      <% if line.links %> 
+        <%= "data-ref='#{ line.links[0]["ref"] }'" %>
+      <% end -%> >
+  <%= line.content %>
+</div>
+<% if line.end_stanza %>
+  </div>
+<% end %>

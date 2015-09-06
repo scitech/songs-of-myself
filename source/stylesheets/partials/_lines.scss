@@ -1,0 +1,27 @@
+/* 
+ * Lines
+ *
+ * */
+
+.line {
+  text-indent: -2.2rem;
+  padding-left: 4.4rem;
+  padding-right: 2.2rem;
+}
+
+[data-ref] {
+  transition: background-color 0.3s ease-out;
+  &:hover {
+    background-color: lighten($action-color, 30%);
+    cursor: pointer;
+  }
+}
+
+.highlight {
+  background-color: lighten($action-color,9%);
+}
+
+.hint {
+  transition: background-color 0.3s ease-out;
+  color: $action-color;
+}

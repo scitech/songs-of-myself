@@ -1,0 +1,24 @@
+.year-nav {
+  z-index: 9999;
+  margin-top: 0;
+  background-color: $white;
+  position: fixed;
+  cursor: pointer;
+  //width: 161px;
+  top: 0;
+  left: 0;
+  border-right: $base-border;
+  border-bottom: $base-border;
+}
+
+.menu-year {
+  padding: .25em .5em;
+  transition: all 200ms ease;
+}
+
+.secondary .menu-year {
+  cursor: pointer;
+  background-color: $white;
+  border-left: $base-border;
+  border-bottom: $base-border;
+}

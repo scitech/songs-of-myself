@@ -1,0 +1,9 @@
+---
+title: Song of Myself.
+---
+<%= partial "partials/nav" %>
+<div class="primary">
+  <% data.fiftyfive.lines.each do |line| %>
+    <%= partial "partials/poesy", :locals => { :line => line } %>
+  <% end %>
+</div><!-- .welcome -->

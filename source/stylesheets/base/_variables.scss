@@ -1,0 +1,40 @@
+// Typography
+$serif: "Libre Baskerville", Baskerville, "Palatino Linotype", Palatino, serif;
+$sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: $serif;
+$heading-font-family: $serif;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.6;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$white: #ffffff;
+$blue: #477dca;
+$red: #D36C5F;
+$dark-gray: #303133;
+$medium-gray: #999;
+$light-gray: #ddd;
+$off-white: #efe9e9;
+
+// Font Colors
+$base-background-color: #efe9e9;
+$base-font-color: $dark-gray;
+$action-color: $red;
+
+// Border
+$base-border-color: $dark-gray;
+$base-border: 2px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

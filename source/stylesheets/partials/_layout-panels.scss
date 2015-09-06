@@ -1,0 +1,27 @@
+.panel {
+  cursor: auto;
+}
+
+.panel-left {
+  @extend .panel;
+  margin-left: 0;
+  max-width: 48%
+}
+
+.secondary {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 52%;
+  height: 100%;
+  border-left: $base-border;
+  background-color: $white;
+  overflow-y: scroll;
+  @include transition(all 0.2s ease-in);
+  @include live-area-top;
+  .menu-year {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}

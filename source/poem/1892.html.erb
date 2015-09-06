@@ -1,0 +1,17 @@
+---
+title: Song of Myself.
+year: "1892"
+otheryear: "1855"
+---
+<div class="primary">
+  <h1 class="title"><%= current_page.data.title %></h1>
+  <% data.ninetytwo.lines.each do |line| %>
+    <%= partial "partials/poesy", :locals => { :line => line } %>
+  <% end %>
+</div> <!-- .primary -->
+<div class="secondary hide">
+  <div class="menu-year"><%= current_page.data.otheryear %> &times;</div>
+  <% data.fiftyfive.lines.each do |line| %>
+    <%= partial "partials/poesy", :locals => { :line => line } %>
+  <% end %>
+</div> <!-- -->

@@ -1,0 +1,19 @@
+.welcome {
+  
+  margin: 0 auto;
+  max-width: 84%;
+  padding-top: 4rem;
+  @include media($medium-screen) {
+    padding-top: 10rem;
+    max-width: 75%;
+  }
+  @include media($large-screen) {
+    //padding: 12.5% 12.5%;
+    max-width: rem(650);
+  }
+  
+}
+
+.credits {
+  margin-top: 5rem;
+}
