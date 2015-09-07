@@ -10,7 +10,7 @@
     <% end %>
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Song of Myself." %></title>
+    <title><%=  "#{current_page.data.year} #{current_page.data.title}" || "Song of Myself." %></title>
 
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Libre+Baskerville:300italic,400italic,700italic,400,300,700|Open+Sans:300italic,400italic,700italic,400,300,700' %>
