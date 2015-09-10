@@ -79,10 +79,10 @@ window.Cf = {
 
 
     // DEBUG
-    console.log( "refLineNum is "+refLineNum );
-    console.log( "refLine is "+refLine.html() );
-    console.log( "opposite panel offsets are "+refOffsets );
-    console.log( "oppositePanel is "+oppositePanel );
+    // console.log( "refLineNum is "+refLineNum );
+    // console.log( "refLine is "+refLine.html() );
+    // console.log( "opposite panel offsets are "+refOffsets );
+    // console.log( "oppositePanel is "+oppositePanel );
   },
 
   shout: function(help) {
